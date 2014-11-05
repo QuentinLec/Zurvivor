@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Zurvivor</string>
+    <string name="app_name">ProjetZ</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="zurvivor">Zurvivor</string>
+    <string name="refresh">Refresh</string>
+    
+    <!-- Menu accueil -->
+    
+    <string name="menu_accueil_titre">Accueil</string>
+    <string name="menu_accueil_jouer">Jouer</string>
+    <string name="menu_accueil_options">Options</string>
+    <string name="menu_accueil_deconnexion">Déconnexion</string>
+    <string name="menu_accueil_quitter">Quitter</string>
+    
+    <!-- Menu identification -->
+    
+    <string name="menu_identification_titre">Identification</string>
+    <string name="menu_identification_pseudo">Pseudonyme</string>
+    <string name="menu_identification_motDePasse">Mot de passe</string>
+    <string name="menu_identification_bouton_jouer">Jouer</string>
+    <string name="menu_identification_bouton_creer">Créer un compte.</string>
+    
+    <!-- Menu création de compte -->
+    
+    <string name="menu_creation_compte_titre">Création d\'un compte</string>
+    <string name="menu_creation_compte_pseudo">Pseudonyme :</string>
+    <string name="menu_creation_compte_motDePasse">Mot de passe :</string>
+    <string name="menu_creation_compte_confirmation">Confirmer le mot de passe :</string>
+    <string name="menu_creation_compte_dateDeNaissance">Date de naissance (xx/xx/xxxx) :</string>
+    <string name="menu_creation_compte_mail">Mail :</string>
+    <string name="menu_creation_compte_pays">Pays :</string>
+    <string name="menu_creation_compte_creer">Créer</string>
+    
+    <!-- Menu options -->
+    
+    <string name="menu_options_titre">Options</string>
+    <string name="menu_options_retour">Retour</string>
+    
+    <!-- Menu gauche -->
+    
+    <string name="menu_gauche_titre">Menu Zurvivor</string>
+    <string name="menu_gauche_profil">Profil</string>
+    <string name="menu_gauche_inventaire">Inventaire</string>
+    <string name="menu_gauche_carte">Carte</string>
+    <string name="menu_gauche_chat">Chat</string>
+    <string name="menu_gauche_options">Options</string>
+    <string name="menu_gauche_quitter">Quitter</string>
+    
+    <!-- Fenêtre quitter -->
+    
+    <string name="fenetre_quitter_titre">Quitter</string>
+    <string name="fenetre_quitter_message">Voulez-vous vraiment quitter <b>Zurvivor</b> ?</string>
+    <string name="fenetre_quitter_oui">Oui</string>
+    <string name="fenetre_quitter_non">Non</string>
 
 </resources>

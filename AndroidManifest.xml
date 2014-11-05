@@ -10,17 +10,30 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/z_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".MenuIdentification"
+            android:label="@string/zurvivor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MenuAccueil"
+            android:label="@string/menu_accueil_titre" >
+        </activity>
+        <activity
+            android:name=".MenuCreationCompte"
+            android:label="@string/menu_creation_compte_titre" >
+        </activity>
+        <activity
+            android:name=".MenuOptions"
+            android:label="@string/menu_options_titre" >
         </activity>
     </application>
 
