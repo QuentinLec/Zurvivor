@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dip"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/layout_haut"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="3dip"
+	    android:layout_weight="1" >
+    
+	    <Button 
+	        android:id="@+id/image_inventaire_arme_principale"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	        android:background="@drawable/test_orange"
+	        android:text="Arme principale" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/layout_centre"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="3dip"
+	    android:layout_weight="1" >
+	    
+	    <Button 
+	        android:id="@+id/image_inventaire_arme_secondaire"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	        android:background="@drawable/test_vert"
+	        android:text="Arme secondaire" />
+    </LinearLayout>
+    
+    <LinearLayout  
+        android:id="@+id/layout_bas"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="3dip"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+    
+	    <Button 
+	        android:id="@+id/image_inventaire_objet1"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	        android:background="@drawable/test_marron"
+	        android:text="Objet 1" />
+	    
+	    <Button 
+	        android:id="@+id/image_inventaire_objet2"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	        android:background="@drawable/test_orange"
+	        android:text="Objet 2" />
+	</LinearLayout>
+</LinearLayout>
