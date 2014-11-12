@@ -1,4 +1,4 @@
-package com.studio124.zurvivor.bdd.dataSource;
+package com.studio124.zurvivor.bdd.DBHelper;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.studio124.zurvivor.bdd.DBHelper.MySQLiteHelperUser;
 import com.studio124.zurvivor.bdd.modele.User;
 
 public class dataSource {

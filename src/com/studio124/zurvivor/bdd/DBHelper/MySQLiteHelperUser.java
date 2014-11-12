@@ -31,9 +31,9 @@ public class MySQLiteHelperUser extends SQLiteOpenHelper{
 			COLUMN_USER_LASTNAME+" TEXT (20)," +
 			COLUMN_USER_FIRSTNAME+" TEXT (20)," +
 			COLUMN_USER_COUNTRY+" TEXT (20)," +
-			COLUMN_USER_ADDRESS+" TEXT (100)" +
+			COLUMN_USER_ADDRESS+" TEXT (100)," +
 			COLUMN_USER_BIRTHDAY+" TEXT (20)," +
-			COLUMN_USER_MAIL+" TEXT (20)," +
+			COLUMN_USER_MAIL+" TEXT (20)" +
 			");";
 			
 	
