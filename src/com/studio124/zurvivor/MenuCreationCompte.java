@@ -1,5 +1,8 @@
 package com.studio124.zurvivor;
 
+import java.text.SimpleDateFormat;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -11,13 +14,6 @@ import android.widget.TextView;
 import com.studio124.zurvivor.bdd.dataSource.dataSource;
 
 public class MenuCreationCompte extends ActionBarActivity {
-	
-	final String loginString = "user_login";
-	final String dateDeNaissanceString = "user_birthday";
-	final String paysString = "user_country";
-	final String mailString = "user_mail";
-	final String passwordString = "user_password";
-	final String confirmationString = "user_confirmation";
 	
 	private dataSource dataSource;
     
@@ -43,8 +39,13 @@ public class MenuCreationCompte extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				
+				if (loginEdit.getText().toString().matches("[ ]*")) {
+					
+				}
+				
+				
 				try {
-				dataSource.createUser(loginEdit.getText().toString(),
+					dataSource.createUser(loginEdit.getText().toString(),
 						passwordEdit.getText().toString(),
 						confirmationEdit.getText().toString(),
 						loginEdit.getText().toString(),
@@ -57,6 +58,9 @@ public class MenuCreationCompte extends ActionBarActivity {
 				catch (Exception e) {
 					Log.e("Test", ""+e.getMessage());
 				}
+				
+				Intent intent = new Intent(MenuCreationCompte.this, MenuAccueil.class);
+				startActivity(intent);
 			}
 		});
 	}

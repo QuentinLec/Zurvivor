@@ -14,7 +14,7 @@
         android:id="@+id/menu_creation_compte_editText_pseudo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=""
+        android:inputType="text"
         android:layout_below="@id/menu_creation_compte_texte_pseudo" />
     
     <TextView
@@ -28,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
-        android:hint=""
         android:layout_below="@id/menu_creation_compte_texte_dateDeNaissance" />
     
     <TextView
@@ -41,7 +40,7 @@
         android:id="@+id/menu_creation_compte_editText_pays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=""
+        android:inputType="text"
         android:layout_below="@id/menu_creation_compte_texte_pays" />
     
     <TextView
@@ -49,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/menu_creation_compte_editText_pays"
+        android:inputType="textEmailAddress"
         android:text="@string/menu_creation_compte_mail" />
     <EditText 
         android:id="@+id/menu_creation_compte_editText_mail"
