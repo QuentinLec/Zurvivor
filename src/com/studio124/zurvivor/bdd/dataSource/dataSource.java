@@ -40,6 +40,7 @@ public class dataSource {
 										MySQLiteHelperUser.COLUMN_USER_LASTNAME,
 										MySQLiteHelperUser.COLUMN_USER_FIRSTNAME,
 										MySQLiteHelperUser.COLUMN_USER_COUNTRY,
+										MySQLiteHelperUser.COLUMN_USER_BIRTHDAY,
 										MySQLiteHelperUser.COLUMN_USER_MAIL};
 	
 	public User cursorToUser(Cursor cursor){
@@ -52,12 +53,13 @@ public class dataSource {
 		newUser.setUser_firstname(cursor.getString(cursor.getColumnIndex(MySQLiteHelperUser.COLUMN_USER_FIRSTNAME)));
 		newUser.setUser_address(cursor.getString(cursor.getColumnIndex(MySQLiteHelperUser.COLUMN_USER_ADDRESS)));
 		newUser.setUser_country(cursor.getString(cursor.getColumnIndex(MySQLiteHelperUser.COLUMN_USER_COUNTRY)));
+		newUser.setUser_birthday(cursor.getString(cursor.getColumnIndex(MySQLiteHelperUser.COLUMN_USER_BIRTHDAY)));
 		newUser.setUser_mail(cursor.getString(cursor.getColumnIndex(MySQLiteHelperUser.COLUMN_USER_MAIL)));
 		
 		return newUser;
 	}
 	
-	public User createUser(String login, String password, String password_check, String nom, String prenom, String adresse, String pays, String mail){
+	public User createUser(String login, String password, String password_check, String nom, String prenom, String adresse, String pays,String dateDeNaissance, String mail){
 		ContentValues values = new ContentValues();
 		values.put(MySQLiteHelperUser.COLUMN_USER_LOGIN, login);
 		values.put(MySQLiteHelperUser.COLUMN_USER_PASSWORD, password);
@@ -66,6 +68,7 @@ public class dataSource {
 		values.put(MySQLiteHelperUser.COLUMN_USER_FIRSTNAME, prenom);
 		values.put(MySQLiteHelperUser.COLUMN_USER_ADDRESS, adresse);
 		values.put(MySQLiteHelperUser.COLUMN_USER_COUNTRY, pays);
+		values.put(MySQLiteHelperUser.COLUMN_USER_BIRTHDAY, dateDeNaissance);
 		values.put(MySQLiteHelperUser.COLUMN_USER_MAIL, mail);
 		
 		long insertId = database.insert(MySQLiteHelperUser.TAB_USER, null, values);

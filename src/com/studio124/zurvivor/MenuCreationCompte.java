@@ -1,12 +1,14 @@
 package com.studio124.zurvivor;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.studio124.zurvivor.bdd.dataSource.dataSource;
 
 public class MenuCreationCompte extends ActionBarActivity {
 	
@@ -16,13 +18,16 @@ public class MenuCreationCompte extends ActionBarActivity {
 	final String mailString = "user_mail";
 	final String passwordString = "user_password";
 	final String confirmationString = "user_confirmation";
-    
-    private Intent intent = null;
+	
+	private dataSource dataSource;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu_creation_compte);
+		
+		dataSource = new dataSource(this);
+		dataSource.open();
 		
 		final TextView menuCreationCompteBoutonCréer = (TextView) findViewById(R.id.menu_creation_compte_bouton_creer);
 	    
@@ -38,40 +43,21 @@ public class MenuCreationCompte extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				
-				intent = null;
-				
-				String password = passwordEdit.getText().toString(),
-						confirmation = confirmationEdit.getText().toString();
-				
-				
-				if (password.equals(confirmation)) {
-					intent = new Intent(MenuCreationCompte.this, MenuIdentification.class);
-					intent.putExtra(loginString, loginEdit.getText().toString());
-					/*intent.putExtra(dateDeNaissanceString, dateDeNaissanceEdit.getText().toString());
-					intent.putExtra(paysString, paysEdit.getText().toString());
-					intent.putExtra(mailString, mailEdit.getText().toString());
-					intent.putExtra(passwordString, passwordEdit.getText().toString());
-					intent.putExtra(confirmationString, confirmationEdit.getText().toString());*/
+				try {
+				dataSource.createUser(loginEdit.getText().toString(),
+						passwordEdit.getText().toString(),
+						confirmationEdit.getText().toString(),
+						loginEdit.getText().toString(),
+						loginEdit.getText().toString(),
+						paysEdit.getText().toString(),
+						paysEdit.getText().toString(),
+						dateDeNaissanceEdit.getText().toString(),
+						mailEdit.getText().toString());
 				}
-				else {
-					intent = new Intent(MenuCreationCompte.this, MenuCreationCompte.class);
-					intent.putExtra(loginString, loginEdit.getText().toString());
-					intent.putExtra(dateDeNaissanceString, dateDeNaissanceEdit.getText().toString());
-					intent.putExtra(paysString, paysEdit.getText().toString());
-					intent.putExtra(mailString, mailEdit.getText().toString());
+				catch (Exception e) {
+					Log.e("Test", ""+e.getMessage());
 				}
-				
-				startActivity(intent);
 			}
 		});
-		
-		intent = getIntent();
-		
-		if (intent != null) {
-			loginEdit.setText(intent.getStringExtra(loginString));
-			dateDeNaissanceEdit.setText(intent.getStringExtra(dateDeNaissanceString));
-			paysEdit.setText(intent.getStringExtra(paysString));
-			mailEdit.setText(intent.getStringExtra(mailString));
-	    }
 	}
 }
