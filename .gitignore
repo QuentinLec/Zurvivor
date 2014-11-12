@@ -26,3 +26,6 @@ proguard/
 *.log
 /project.properties
 /lint.xml
+.classpath
+.project.properties
+.lint.xml
