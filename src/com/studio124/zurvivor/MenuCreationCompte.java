@@ -21,7 +21,7 @@ public class MenuCreationCompte extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu_creation_compte);
-		String test = "test"; 
+		String test = "test!!!!!!!!!!!!!!!"; 
 		dataSource = new dataSource(this);
 		dataSource.open();
 		
