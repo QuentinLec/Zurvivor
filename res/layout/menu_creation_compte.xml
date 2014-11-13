@@ -48,14 +48,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/menu_creation_compte_editText_pays"
-        android:inputType="textEmailAddress"
         android:text="@string/menu_creation_compte_mail" />
     <EditText 
         android:id="@+id/menu_creation_compte_editText_mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint=""
         android:layout_below="@id/menu_creation_compte_texte_mail" />
     
     <TextView
@@ -69,7 +67,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint=""
         android:layout_below="@id/menu_creation_compte_texte_motDePasse" />
     
     <TextView
@@ -83,7 +80,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint=""
         android:layout_below="@id/menu_creation_compte_texte_confirmation" />
     
     <Button
