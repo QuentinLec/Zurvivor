@@ -13,11 +13,7 @@ public class MySQLiteHelperUser extends SQLiteOpenHelper{
 	public static final String COLUMN_USER_ID = "id";
 	public static final String COLUMN_USER_LOGIN	="login";
 	public static final String COLUMN_USER_PASSWORD = "password";
-	public static final String COLUMN_USER_PASSWORD_CHECK = "password_check";
 	public static final String COLUMN_USER_COUNTRY = "pays";
-	public static final String COLUMN_USER_LASTNAME = "nom";
-	public static final String COLUMN_USER_FIRSTNAME = "prenom";
-	public static final String COLUMN_USER_ADDRESS = "adresse";
 	public static final String COLUMN_USER_BIRTHDAY = "date_annivervaire"; 
 	public static final String COLUMN_USER_MAIL = "adresse_mail";
 	private static final String DATABASE_NAME = "test.db";
@@ -27,11 +23,7 @@ public class MySQLiteHelperUser extends SQLiteOpenHelper{
 			+COLUMN_USER_ID+" INTEGER PRIMARY KEY AUTOINCREMENT," +
 			COLUMN_USER_LOGIN+" TEXT (20)," +
 			COLUMN_USER_PASSWORD+" TEXT (20)," +
-			COLUMN_USER_PASSWORD_CHECK+" TEXT (20)," +
-			COLUMN_USER_LASTNAME+" TEXT (20)," +
-			COLUMN_USER_FIRSTNAME+" TEXT (20)," +
 			COLUMN_USER_COUNTRY+" TEXT (20)," +
-			COLUMN_USER_ADDRESS+" TEXT (100)," +
 			COLUMN_USER_BIRTHDAY+" TEXT (20)," +
 			COLUMN_USER_MAIL+" TEXT (20)" +
 			");";

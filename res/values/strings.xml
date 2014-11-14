@@ -26,10 +26,10 @@
     <!-- Menu création de compte -->
     
     <string name="menu_creation_compte_titre">Création d\'un compte</string>
-    <string name="menu_creation_compte_pseudo">Pseudonyme :</string>
+    <string name="menu_creation_compte_pseudo">Login :</string>
     <string name="menu_creation_compte_motDePasse">Mot de passe :</string>
     <string name="menu_creation_compte_confirmation">Confirmer le mot de passe :</string>
-    <string name="menu_creation_compte_dateDeNaissance">Date de naissance (xx/xx/xxxx) :</string>
+    <string name="menu_creation_compte_dateDeNaissance">Date de naissance :</string>
     <string name="menu_creation_compte_mail">Mail :</string>
     <string name="menu_creation_compte_pays">Pays :</string>
     <string name="menu_creation_compte_creer">Créer</string>
