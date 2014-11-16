@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawerLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/zombie" >
-
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    xmlns:tools="http://schemas.android.com/tools"
 	    android:layout_width="match_parent"
-	    android:layout_height="match_parent" >
+	    android:layout_height="match_parent"
+	    android:background="@drawable/zombie" >
 	    
 	    <EditText 
 	        android:id="@+id/menu_identifictaion_editText_identification"
@@ -50,75 +44,4 @@
 	    	android:textColor="#FFFFFF"
 	    	android:textStyle="italic" />
 	
-	</RelativeLayout>
-
-    <!-- contenu du drawer -->
-    
-    <RelativeLayout 
-	    android:layout_width="240dp"
-	    android:layout_height="match_parent"
-	    android:layout_gravity="left"
-	    android:background="@android:color/black" >
-	    
-        <TextView
-	        android:id="@+id/menu_gauche_text_titre"
-	        android:layout_width="240sp"
-	    	android:layout_height="100sp"
-	    	android:layout_margin="10sp"
-	    	android:gravity="center"
-	    	android:text="@string/menu_gauche_titre"
-	    	android:textColor="#00FF00"
-	    	android:textStyle="bold"
-	    	android:textSize="16sp" />
-        
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_profil"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:text="@string/menu_gauche_profil"
-	        android:layout_above="@+id/menu_gauche_bouton_inventaire"
-	        android:layout_alignLeft="@+id/menu_gauche_bouton_inventaire" />
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_inventaire"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:text="@string/menu_gauche_inventaire"
-	        android:layout_above="@+id/menu_gauche_bouton_carte"
-	        android:layout_alignLeft="@+id/menu_gauche_bouton_carte" />
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_carte"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:layout_centerInParent="true"
-	        android:text="@string/menu_gauche_carte" />
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_chat"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:text="@string/menu_gauche_chat"
-	        android:layout_below="@id/menu_gauche_bouton_carte"
-	        android:layout_alignLeft="@id/menu_gauche_bouton_carte" />
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_options"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:text="@string/menu_gauche_options"
-	        android:layout_below="@id/menu_gauche_bouton_chat"
-	        android:layout_alignLeft="@id/menu_gauche_bouton_chat" />
-    	<Button
-	        android:id="@+id/menu_gauche_bouton_quitter"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_marginBottom="3sp"
-	        android:text="@string/menu_gauche_quitter"
-	        android:layout_below="@id/menu_gauche_bouton_options"
-	        android:layout_alignLeft="@id/menu_gauche_bouton_options" />
-	     
-        </RelativeLayout>
-    
-</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

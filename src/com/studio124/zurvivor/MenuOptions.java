@@ -1,5 +1,7 @@
 package com.studio124.zurvivor;
 
+import com.studio124.zurvivor.menus.MenuAccueil;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;

@@ -1,51 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawerLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
->
-
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
 	    
-	    <Button
-	        android:id="@+id/menu_accueil_bouton_jouer"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:layout_centerInParent="true"
-	        android:text="@string/menu_accueil_jouer" />
+	<Button
+		android:id="@+id/menu_accueil_bouton_jouer"
+	    android:layout_width="200sp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerInParent="true"
+	    android:text="@string/menu_accueil_jouer" />
 	    
-	    <Button
-	        android:id="@+id/menu_accueil_bouton_options"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:layout_below="@id/menu_accueil_bouton_jouer"
-	        android:text="@string/menu_accueil_options" />
+	<Button
+	    android:id="@+id/menu_accueil_bouton_options"
+	    android:layout_width="200sp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/menu_accueil_bouton_jouer"
+	    android:text="@string/menu_accueil_options" />
 	    
-	    <Button
-	        android:id="@+id/menu_accueil_bouton_deconnexion"
-	        android:layout_width="200sp"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:layout_below="@id/menu_accueil_bouton_options"
-	        android:text="@string/menu_accueil_deconnexion" />
+	<Button
+	    android:id="@+id/menu_accueil_bouton_deconnexion"
+	    android:layout_width="200sp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/menu_accueil_bouton_options"
+	    android:text="@string/menu_accueil_deconnexion" />
 	
-	</RelativeLayout>
-
-    <!-- contenu du drawer -->
-    <Button
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:text="Bouton 1"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"
-    />
-</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

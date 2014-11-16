@@ -1,4 +1,4 @@
-package com.studio124.zurvivor;
+package com.studio124.zurvivor.menus;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.studio124.zurvivor.R;
 import com.studio124.zurvivor.bdd.dataSource.dataSource;
 
 public class MenuCreationCompte extends ActionBarActivity {

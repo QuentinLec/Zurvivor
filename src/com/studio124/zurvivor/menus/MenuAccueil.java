@@ -1,4 +1,4 @@
-package com.studio124.zurvivor;
+package com.studio124.zurvivor.menus;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.studio124.zurvivor.MenuOptions;
+import com.studio124.zurvivor.R;
+import com.studio124.zurvivor.interfaces.InterfaceCarte;
 
 public class MenuAccueil extends ActionBarActivity {
 	
@@ -32,7 +36,7 @@ public class MenuAccueil extends ActionBarActivity {
 		@Override
 		public void onClick(View v) {
 			
-			intent = new Intent(MenuAccueil.this, MenuAccueil.class);
+			intent = new Intent(MenuAccueil.this, InterfaceCarte.class);
 			startActivity(intent);
 		}
 	};
