@@ -65,7 +65,7 @@ public class MenuIdentification extends ActionBarActivity {
 		@Override
 		public void onClick(View v) {
 					
-			intent = new Intent(MenuIdentification.this, MenuCreationCompte.class);
+			intent = new Intent(com.studio124.zurvivor.menus.MenuIdentification.this, com.studio124.zurvivor.menus.MenuCreationCompte.class);
 			startActivity(intent);
 		}
 	};

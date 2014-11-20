@@ -47,7 +47,7 @@ public class MenuAccueil extends ActionBarActivity {
 		@Override
 		public void onClick(View v) {
 				
-			intent = new Intent(MenuAccueil.this, MenuOptions.class);
+			intent = new Intent(MenuAccueil.this, com.studio124.zurvivor.MenuOptions.class);
 			startActivity(intent);
 		}
 	};

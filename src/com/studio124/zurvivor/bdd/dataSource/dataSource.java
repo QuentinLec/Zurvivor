@@ -6,24 +6,25 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.studio124.zurvivor.bdd.DBHelper.MySQLiteDBHelper;
 import com.studio124.zurvivor.bdd.DBHelper.MySQLiteHelperUser;
 import com.studio124.zurvivor.bdd.modele.User;
 
 public class dataSource {
 
 	private SQLiteDatabase database;
-	private MySQLiteHelperUser dbHelperUser;
+	private MySQLiteDBHelper dbHelper;
 	
 	public dataSource (Context context){
-		dbHelperUser = new MySQLiteHelperUser(context);
+		dbHelper = new MySQLiteDBHelper(context);
 	}
 	
 	public void open() throws SQLException {
-		database = dbHelperUser.getWritableDatabase();
+		database = dbHelper.getWritableDatabase();
 	}
 	
 	public void close(){
-		dbHelperUser.close();
+		dbHelper.close();
 	}
 	
 	
