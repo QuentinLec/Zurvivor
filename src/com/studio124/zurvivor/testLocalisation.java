@@ -1,11 +1,5 @@
 package com.studio124.zurvivor;
 
-import java.util.ArrayList;
-
-import android.content.Context;
-import android.location.Criteria;
-import android.location.LocationManager;
-import android.location.LocationProvider;
 
 public class testLocalisation {
 
