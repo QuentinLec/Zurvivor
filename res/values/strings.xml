@@ -7,6 +7,8 @@
     <string name="zurvivor">Zurvivor</string>
     <string name="refresh">Refresh</string>
     
+    <string name="apikey">AIzaSyAI7E39ivVomEDalgmqQIsFusEmHj4KOQE</string>
+    
     <!-- Menu accueil -->
     
     <string name="menu_accueil_titre">Accueil</string>
