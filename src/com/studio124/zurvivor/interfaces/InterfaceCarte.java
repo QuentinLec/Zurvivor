@@ -1,5 +1,6 @@
 package com.studio124.zurvivor.interfaces;
 
+import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
@@ -17,10 +18,10 @@ import android.widget.Button;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.studio124.zurvivor.PermissionGps;
 import com.studio124.zurvivor.R;
 
 public class InterfaceCarte extends ActionBarActivity implements LocationListener {
@@ -52,22 +53,11 @@ public class InterfaceCarte extends ActionBarActivity implements LocationListene
 		
 /**********************************************************************************************************************/
 		
-//		/** Récupère le locationManager qui gère la localisation */
-//	      LocationManager locManager;
-//	      locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-//	      /** Test si le gps est activé ou non */
-//	      if (!locManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-//	          /** on lance notre activity (qui est une dialog) */
-//	          Intent localIntent = new Intent(this, PermissionGps.class);
-//	          localIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//	          startActivity(localIntent);
-//	      }
-		
-	      gMap = ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
-	      
-	      marker = gMap.addMarker(new MarkerOptions().title("Tu veux manger des CHIPS ???")
-	    		  										.position(new LatLng(0, 0)));
-	      //marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.ic_head));
+	    gMap = ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
+	     
+	    marker = gMap.addMarker(new MarkerOptions().title("Tu veux manger des CHIPS ???")
+	    	  										.position(new LatLng(0, 0)));
+	    //marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.ic_head));
 	}
 	
 	private void initBoutonsMenuGauche() {

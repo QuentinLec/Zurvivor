@@ -87,6 +87,13 @@
             android:name="com.studio124.zurvivor.interfaces.InterfaceOptions"
             android:label="Options" >
         </activity>
+        
+        <!-- AUTRES -->
+        
+        <activity
+            android:name="com.studio124.zurvivor.PermissionGps" >
+        </activity>
+        
     </application>
 
 </manifest>
